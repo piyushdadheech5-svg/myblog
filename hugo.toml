@@ -4,6 +4,7 @@ title = "Piyush Dadheech"
 theme = 'PaperMod'
 
 [params]
+  # Theme configuration
   defaultTheme = "auto" # dark, light, or auto
   disableThemeToggle = false
   ShowReadingTime = true
