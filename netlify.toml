@@ -3,13 +3,13 @@
   publish = "public"
 
 [context.production.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.146.0"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.146.0"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.128.2"
+  HUGO_VERSION = "0.146.0"
 
 # Force HTTPS and security headers
 [[headers]]
