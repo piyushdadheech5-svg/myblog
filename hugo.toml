@@ -22,35 +22,34 @@ theme = 'PaperMod'
   tocopen = false
 
 [params.homeInfoParams]
-  Title = "Hi 👋"
+  Title = "Hi, I'm Piyush"
   Content = "I'm Piyush, endlessly curious, a tad confused, wannabe writer. Welcome to my corner of the internet."
 
-[[params.socialIcons]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/dadheechpiyush"
-
-[[params.socialIcons]]
-  name = "x"
-  url = "https://x.com/Piyush92m"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 5
 
   [[menu.main]]
     identifier = "archives"
-    name = "Archives"
+    name = "Writing"
     url = "/archives/"
-    weight = 20
+    weight = 10
 
   [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
+    identifier = "micro"
+    name = "Micro"
+    url = "/micro/"
     weight = 30
+
+  [[menu.main]]
+    identifier = "connect"
+    name = "Connect"
+    url = "/connect/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

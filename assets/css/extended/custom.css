@@ -1,0 +1,357 @@
+/* Light mode - Samarth's warm white palette */
+:root[data-theme="light"] {
+    --theme: #fefdfb !important;
+    --entry: #fefdfb !important;
+    --code-bg: #fefdfb !important;
+}
+
+/* Fix list pages (Posts, Archives, Search) background */
+[data-theme="light"] .list,
+[data-theme="light"] body,
+[data-theme="light"] .main {
+    background: #fefdfb !important;
+}
+
+/* Typography - matching samarthbansal.com */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+    line-height: 1.7 !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+/* Navigation */
+.nav a {
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+}
+
+.logo a {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* Page & post list titles */
+.page-title, h1 {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+}
+
+.post-entry .entry-hint-parent {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+}
+
+.entry-footer, .post-meta, time {
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.01em !important;
+}
+
+/* Article / single post */
+article .entry-header h1 {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2 !important;
+}
+
+.post-content, article .entry-content {
+    font-size: 1.05rem !important;
+}
+
+article .entry-content h2 {
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.015em !important;
+    line-height: 1.3 !important;
+}
+
+article .entry-content h3 {
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+}
+
+article .entry-content h4 {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+}
+
+article .entry-content code {
+    font-size: 0.9em !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    article .entry-header h1 { font-size: 2rem !important; }
+    article .entry-content h2 { font-size: 1.6rem !important; }
+    article .entry-content h3 { font-size: 1.3rem !important; }
+}
+
+/* Blue static highlight for "Piyush" on homepage */
+.name-highlight {
+    color: #387ED1;
+}
+
+/* About page */
+.about-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 80px 0 2rem 0;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left .post-title {
+    margin-top: 0;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    image-rendering: high-quality;
+}
+
+.about-elsewhere {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.about-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.about-links a {
+    color: #387ED1 !important;
+    text-decoration: none !important;
+    font-size: 1.05rem !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+    font-weight: 400 !important;
+    transition: color 0.2s ease !important;
+}
+
+.about-links a:hover {
+    color: #1a5fa8 !important;
+}
+
+/* Breadcrumb hover */
+.breadcrumbs a {
+    transition: color 0.3s ease !important;
+}
+.breadcrumbs a:hover {
+    color: #387ED1 !important;
+}
+
+/* Micro page header */
+.micro-header {
+    margin: 24px auto var(--content-gap) auto;
+}
+
+.micro-header-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.micro-title {
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Section page description */
+.page-description {
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* Writing page list layout */
+.writing-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.writing-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 0.6rem 0.5rem;
+    border-radius: 6px;
+    text-decoration: none !important;
+    transition: background 0.2s ease;
+}
+
+.writing-item:hover {
+    background: var(--tertiary);
+}
+
+.writing-date {
+    flex: 0 0 5.5rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    color: var(--secondary);
+    font-variant-numeric: tabular-nums;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+}
+
+.writing-title {
+    flex: 1;
+    font-size: 1.05rem;
+    color: var(--primary);
+    transition: text-decoration 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+}
+
+.writing-item:hover .writing-title {
+    text-decoration: underline;
+    color: #387ED1 !important;
+}
+
+/* RSS icon on Writing page */
+.rss-link {
+    transition: color 0.3s ease !important;
+    position: relative;
+}
+
+.rss-link:hover {
+    color: #387ED1 !important;
+}
+
+.rss-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.rss-link:hover::after {
+    opacity: 1;
+}
+
+/* Connect page */
+.connect-page h1 {
+    margin-bottom: 1.5rem;
+}
+
+
+.connect-intro {
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    opacity: 0.8;
+}
+
+.connect-page p {
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.connect-item {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.connect-label {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.connect-item a {
+    font-size: 1.05rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif !important;
+    color: #387ED1 !important;
+    text-decoration: none;
+}
+
+.connect-item a:hover {
+    text-decoration: underline;
+}
+
+/* Logo / Site title */
+.logo a {
+    transition: color 0.3s ease !important;
+}
+.logo a:hover {
+    color: #387ED1 !important;
+}
+
+/* Nav menu items: Posts, Archives, Search */
+#menu a {
+    transition: color 0.3s ease !important;
+}
+#menu a:hover {
+    color: #387ED1 !important;
+}
+
+/* Social icons: LinkedIn, X */
+.social-icons a {
+    transition: color 0.3s ease !important;
+}
+.social-icons a:hover {
+    color: #387ED1 !important;
+}
+
+/* Footer layout: copyright left, RSS right */
+.footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
+}
+
+/* Footer links: RSS, Piyush Dadheech © 2026 */
+.footer a {
+    transition: color 0.3s ease !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.footer a:hover {
+    color: #387ED1 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}

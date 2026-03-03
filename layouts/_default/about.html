@@ -1,0 +1,22 @@
+{{- define "main" }}
+<article class="post-single">
+    <div class="about-wrapper">
+        <div class="about-left">
+            <h1 class="post-title">About</h1>
+            <div class="about-text">{{ .Content }}</div>
+        </div>
+        <div class="about-image">
+            <img src="/images/piyush.jpg" alt="Piyush Dadheech" />
+        </div>
+    </div>
+
+    <div class="about-elsewhere">
+        <span class="about-section-title">Elsewhere:</span>
+        <ul class="about-links">
+            <li><a href="https://www.linkedin.com/in/dadheechpiyush" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:piyushdadheech5@gmail.com">Email</a></li>
+            <li><a href="https://x.com/Piyush92m" target="_blank" rel="noopener noreferrer">X</a></li>
+        </ul>
+    </div>
+</article>
+{{- end }}

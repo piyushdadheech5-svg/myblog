@@ -1,0 +1,29 @@
+{{- define "main" }}
+<header class="micro-header">
+    <div class="micro-header-top">
+        <h1 class="micro-title">{{ .Title }}</h1>
+        {{- with .OutputFormats.Get "rss" }}
+        <a href="{{ .RelPermalink }}" aria-label="RSS" class="rss-link" data-tooltip="RSS feed">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" height="20">
+                <path d="M4 11a9 9 0 0 1 9 9" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <circle cx="5" cy="19" r="1" />
+            </svg>
+        </a>
+        {{- end }}
+    </div>
+    {{- if .Description }}
+    <p class="page-description">{{ .Description }}</p>
+    {{- end }}
+</header>
+
+<div class="writing-list">
+    {{- range .Pages.ByDate.Reverse }}
+    <a class="writing-item" href="{{ .Permalink }}">
+        <span class="writing-date">{{ .Date.Format "Jan 2006" }}</span>
+        <span class="writing-title">{{ .Title | markdownify }}</span>
+    </a>
+    {{- end }}
+</div>
+{{- end }}
