@@ -20,10 +20,11 @@ theme = 'PaperMod'
   hideSummary = false
   showtoc = true
   tocopen = false
+  mainSections = ["posts", "micro"]
 
 [params.homeInfoParams]
   Title = "Hi, I'm Piyush"
-  Content = "I'm Piyush, endlessly curious, a tad confused, wannabe writer. Welcome to my corner of the internet."
+  Content = "I'm Piyush, curious, a tad confused, wannabe writer. Welcome to my corner of the internet."
 
 
 [menu]

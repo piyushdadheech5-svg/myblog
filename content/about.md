@@ -4,4 +4,4 @@ layout: "about"
 url: "/about/"
 ---
 
-Hi, I'm Piyush, and I work at Zerodha. Contrarian, pessimist, slightly curious. My palms tend to get sweaty.
+Hi, I'm Piyush. I work at Zerodha. Contrarian, skeptic, curious, and my palms are sometimes sweaty.

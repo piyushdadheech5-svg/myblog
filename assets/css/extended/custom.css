@@ -1,3 +1,35 @@
+/* Links: no underline by default, show on hover */
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+/* Remove active nav underline */
+#menu .active {
+    border-bottom: none !important;
+}
+
+/* Hide post description from header — keep for SEO only */
+.post-description {
+    display: none;
+}
+
+/* Spacing between breadcrumbs, title and date */
+.breadcrumbs {
+    margin-bottom: 24px;
+}
+
+.post-title {
+    margin-bottom: 20px !important;
+}
+
+.post-meta {
+    margin-bottom: 12px;
+}
+
 /* Light mode - Samarth's warm white palette */
 :root[data-theme="light"] {
     --theme: #fefdfb !important;
@@ -204,11 +236,13 @@ article .entry-content code {
     padding: 0.6rem 0.5rem;
     border-radius: 6px;
     text-decoration: none !important;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .writing-item:hover {
-    background: var(--tertiary);
+    background: rgba(56, 126, 209, 0.06) !important;
+    box-shadow: 0 0 0 1px rgba(56, 126, 209, 0.25) !important;
+    text-decoration: none !important;
 }
 
 .writing-date {
@@ -354,4 +388,78 @@ article .entry-content code {
     color: #387ED1 !important;
     text-decoration: none !important;
     border-bottom: none !important;
+}
+
+/* Sharp corners, compact padding on post cards */
+.post-entry {
+    border-radius: 6px !important;
+    padding: 12px 16px !important;
+    transition: background 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.post-entry:hover {
+    background: rgba(56, 126, 209, 0.06) !important;
+    box-shadow: 0 0 0 1px rgba(56, 126, 209, 0.25) !important;
+}
+
+/* Post title hover effect */
+.post-entry:hover .entry-header h2 {
+    color: #387ED1;
+    transition: color 0.2s ease;
+}
+
+/* Copy link button */
+.copy-link-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--secondary);
+    transition: color 0.2s ease;
+}
+
+.copy-link-btn:hover {
+    color: #387ED1;
+    text-decoration: none !important;
+}
+
+.copy-link-toast {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.copy-link-toast.show {
+    opacity: 1;
+}
+
+
+/* Micro badge */
+.type-badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--tertiary);
+    color: var(--secondary);
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    white-space: nowrap;
 }
